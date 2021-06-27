@@ -1,4 +1,4 @@
-# tinkerpreneur
+# Readability Checker
 
 ## Getting started:
 - Firstly download the repository
