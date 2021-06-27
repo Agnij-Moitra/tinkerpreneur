@@ -2,6 +2,7 @@
 
 ## Getting started:
 - Firstly download the repository
+- All folders starting from `sample` contain sample files that can be used to check the working the the app
 
 ### For Windows:
 - Go to the `windows` folder
