@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import sys
 import importlib.util
 
-blacklist = ['[document]', 'noscript', 'header', 'html', 'meta', 'head','input', 'script']
+blacklist = ['[document]', 'noscript', 'header', 'html', 'meta', 'head', 'input', 'script']
 
 def main(path):
     readability = load_module("readability-algo.py", "main")
@@ -59,11 +59,3 @@ def load_module(file_name, module_name):
     sys.modules[module_name] = module
     spec.loader.exec_module(module)
     return module
-
-
-# # if __name__ == "__main__":
-
-# path = "expert.epub"
-
-# print(main(path))
-
