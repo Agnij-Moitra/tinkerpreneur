@@ -103,53 +103,70 @@ class Ui_MainWindow(object):
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(817, 594)
-        MainWindow.setFixedSize(817, 594)
+        MainWindow.resize(1271, 851)
+        MainWindow.setFixedSize(1271, 851)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.photo = QtWidgets.QLabel(self.centralwidget)
-        self.photo.setGeometry(QtCore.QRect(0, 0, 851, 581))
+        self.photo.setGeometry(QtCore.QRect(-20, -30, 1331, 861))
         self.photo.setText("")
         self.photo.setPixmap(QtGui.QPixmap(
             "images/fallon-michael-qmlGWIaIgpo-unsplash.jpg"))
         self.photo.setScaledContents(True)
         self.photo.setObjectName("photo")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(230, 10, 391, 81))
-        self.label.setStyleSheet("color: white;\n"
-                                 "background-color: rgb(170, 85, 0);\n"
-                                 "font: bold 20pt \"Newspaper\";\n"
-                                 "border-style: outset;\n"
-                                 "border-width: 2px;\n"
-                                 "padding: 6px;\n"
-                                 "min-width: 10px;")
+        self.label.setGeometry(QtCore.QRect(410, 30, 421, 101))
+        self.label.setStyleSheet("font: 28pt \"Arial\";\n"
+                                "color: black;\n"
+                                "text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n"
+                                "border-radius: 25px;\n"
+                                "background: rgb(255, 0, 0, 0.65);\n"
+                                "padding: 20px;\n"
+                                "font-family: Garamond, serif;\n"
+                                "width: 200px;\n"
+                                "height: 150px;\n"
+                                "border-style: outset;\n"
+                                "font-weight: bold;\n"
+                                "border-width: 2px;")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(70, 100, 740, 400))
-        self.label_2.setStyleSheet("color: white;\n"
-                                   "font: 23pt \"Newspaper\";\n"
-                                   "background-color: rgb(170, 85, 0);\n"
-                                   "border-style: outset;\n"
-                                   "border-width: 2px;\n"
-                                   "padding: 6px;\n"
-                                   "min-width: 10px;")
+        self.label_2.setGeometry(QtCore.QRect(200, 150, 851, 441))
+        self.label_2.setStyleSheet("font: 23pt \"Arial\";\n"
+                                    "color: black;\n"
+                                    "text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n"
+                                    "border-radius: 25px;\n"
+                                    "background: rgb(255, 0, 0, 0.4);\n"
+                                    "padding: 20px;\n"
+                                    "width: 200px;\n"
+                                    "height: 150px;\n"
+                                    "border-style: outset;\n"
+                                    "border-width: 2px;\n"
+                                    "font-family: Garamond, serif;\n"
+                                    "font-weight: bold;\n")
+
         self.label_2.setObjectName("label_2")
+        self.label_2.setWordWrap(True)
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(310, 510, 211, 51))
-        self.pushButton.setStyleSheet("color: white;\n"
-                                      "background-color: rgb(170, 85, 0);\n"
-                                      "font: 20pt \"Newspaper\";\n"
-                                      "border-style: outset;\n"
-                                      "border-width: 2px;\n"
-                                      "border-radius: 10px;\n"
-                                      "border-color: black;\n"
-                                      "padding: 6px;\n"
-                                      "min-width: 10px;")
+        self.pushButton.setGeometry(QtCore.QRect(320, 660, 591, 101))
+        self.pushButton.setStyleSheet("font: 23pt;\n"
+                                    "color: black;\n"
+                                    "text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n"
+                                    "border-radius: 25px;\n"
+                                    "background: rgb(255, 0, 0, 0.4);\n"
+                                    "padding: 20px;\n"
+                                    "width: 200px;\n"
+                                    "height: 150px;\n"
+                                    "border-style: outset;\n"
+                                    "font-family: Garamond, serif;\n"
+                                    "border-color: black;\n"
+                                    "font-weight: 5000;\n"
+                                    "border-width: 2px;\n")
+
         self.pushButton.setObjectName("pushButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 817, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1271, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -162,16 +179,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("Readability", "Readability"))
-        self.label.setText(_translate("MainWindow", "Readability Checker"))
-        self.label_2.setText(_translate("MainWindow", "This will use the Coleman–Liau index\n"
-                                        "to check the readbility of a particular file.\n"
-                                        "NOTE It will find the readability\n"
-                                        "of the file on the basis of grammar used\n"
-                                        "and NOT the basis of scientific\n"
-                                        "difficulty for example.\n"
-                                        "As of now .txt, .pdf and .docx .epub\n"
-                                        "files are supported"))
+        MainWindow.setWindowTitle(_translate("Readability", "Tell Well 📚"))
+        self.label.setText(_translate("MainWindow", "Tell Well 📚"))
+        self.label_2.setText(_translate("MainWindow", "This will use the Coleman–Liau index to check the readbility of a particular file. NOTE It will find the readability of the file on the basis of grammar used and NOT the basis of scientific difficulty for example. As of now .txt, .pdf and .docx .epub files are supported."))
         self.pushButton.setText(_translate("MainWindow", "Add File"))
 
 
