@@ -110,17 +110,16 @@ class Ui_MainWindow(object):
         self.photo = QtWidgets.QLabel(self.centralwidget)
         self.photo.setGeometry(QtCore.QRect(-20, -30, 1331, 861))
         self.photo.setText("")
-        self.photo.setPixmap(QtGui.QPixmap(
-            "images/fallon-michael-qmlGWIaIgpo-unsplash.jpg"))
+        self.photo.setPixmap(QtGui.QPixmap("images/susan-q-yin-2JIvboGLeho-unsplash.jpg"))
         self.photo.setScaledContents(True)
         self.photo.setObjectName("photo")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(410, 30, 421, 101))
-        self.label.setStyleSheet("font: 28pt \"Arial\";\n"
-                                "color: black;\n"
+        self.label.setStyleSheet("font: 30pt \"Arial\";\n"
+                                "color: white;\n"
                                 "text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n"
                                 "border-radius: 25px;\n"
-                                "background: rgb(255, 0, 0, 0.65);\n"
+                                "background: rgb(255, 0, 0, 0.6);\n"
                                 "padding: 20px;\n"
                                 "font-family: Garamond, serif;\n"
                                 "width: 200px;\n"
@@ -131,29 +130,29 @@ class Ui_MainWindow(object):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(200, 150, 851, 441))
-        self.label_2.setStyleSheet("font: 23pt \"Arial\";\n"
-                                    "color: black;\n"
+        self.label_2.setGeometry(QtCore.QRect(200, 150, 851, 500))
+        self.label_2.setStyleSheet("font: 30pt \"Arial\";\n"
+                                    "color: white;\n"
                                     "text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n"
                                     "border-radius: 25px;\n"
-                                    "background: rgb(255, 0, 0, 0.4);\n"
+                                    "background: rgb(255, 0, 0, 0.6);\n"
                                     "padding: 20px;\n"
                                     "width: 200px;\n"
                                     "height: 150px;\n"
                                     "border-style: outset;\n"
                                     "border-width: 2px;\n"
                                     "font-family: Garamond, serif;\n"
-                                    "font-weight: bold;\n")
+                                    "font-weight: 10000;\n")
 
         self.label_2.setObjectName("label_2")
         self.label_2.setWordWrap(True)
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(320, 660, 591, 101))
-        self.pushButton.setStyleSheet("font: 23pt;\n"
-                                    "color: black;\n"
+        self.pushButton.setGeometry(QtCore.QRect(420, 660, 491, 101))
+        self.pushButton.setStyleSheet("font: 30pt;\n"
+                                    "color: white;\n"
                                     "text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n"
                                     "border-radius: 25px;\n"
-                                    "background: rgb(255, 0, 0, 0.4);\n"
+                                    "background: rgb(255, 0, 0, 0.6);\n"
                                     "padding: 20px;\n"
                                     "width: 200px;\n"
                                     "height: 150px;\n"
