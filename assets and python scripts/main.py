@@ -180,7 +180,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("Readability", "Tell Well 📚"))
         self.label.setText(_translate("MainWindow", "Tell Well 📚"))
-        self.label_2.setText(_translate("MainWindow", "This will use the Coleman–Liau index to check the readbility of a particular file. NOTE It will find the readability of the file on the basis of grammar used and NOT the basis of scientific difficulty for example. As of now .txt, .pdf and .docx .epub files are supported."))
+        self.label_2.setText(_translate("MainWindow", "This will use the Coleman–Liau index to check the readability of a particular file. NOTE It will find the readability of the file on the basis of grammar used and NOT the basis of scientific difficulty. As of now .txt, .pdf and .docx .epub files are supported."))
         self.pushButton.setText(_translate("MainWindow", "Add File"))
 
 
