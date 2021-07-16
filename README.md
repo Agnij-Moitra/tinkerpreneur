@@ -4,7 +4,7 @@
 - Firstly download the repository
 - All folders starting from `sample` contain sample files that can be used to check the working the the app
 
-### For Windows:
+<!-- ### For Windows: 
 - Go to the `windows` folder
 - Then, click on `main.exe`
 - Now click on `Add File` and add any file you want check the readability of
@@ -15,7 +15,7 @@
 ```
 ./main
 ```
-- Now click on `Add File` and add any file you want check the readability of.
+- Now click on `Add File` and add any file you want check the readability of.-->
 
 ### If Python 3 is installed in your device
 - Go to `assets and python scripts` folder
